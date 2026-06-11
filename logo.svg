@@ -1,0 +1,25 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Secure File Sharing and Recovery System Logo</title>
+  <desc id="desc">A shield, lock, file, and recovery arrow mark for FYP-26-S2-31.</desc>
+  <rect width="160" height="160" rx="38" fill="#FFF8EF"/>
+  <rect x="8" y="8" width="144" height="144" rx="32" fill="url(#paint0_linear)"/>
+  <path d="M80 27L119 42V73C119 99 103 121 80 132C57 121 41 99 41 73V42L80 27Z" fill="#FFF8EF" stroke="#803218" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M61 72H99C103.418 72 107 75.5817 107 80V106C107 110.418 103.418 114 99 114H61C56.5817 114 53 110.418 53 106V80C53 75.5817 56.5817 72 61 72Z" fill="#B55233"/>
+  <path d="M66 72V61C66 53.268 72.268 47 80 47C87.732 47 94 53.268 94 61V72" stroke="#803218" stroke-width="7" stroke-linecap="round"/>
+  <path d="M80 88V101" stroke="#FFF8EF" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="80" cy="86" r="6" fill="#FFF8EF"/>
+  <path d="M108 49H121C124.314 49 127 51.6863 127 55V81" stroke="#FFF8EF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M127 81L116 70" stroke="#FFF8EF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M127 81L138 70" stroke="#FFF8EF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M41 111H28C24.6863 111 22 108.314 22 105V79" stroke="#FFF8EF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 79L11 90" stroke="#FFF8EF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 79L33 90" stroke="#FFF8EF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M58 124H102" stroke="#803218" stroke-width="5" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="24" y1="22" x2="141" y2="145" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0C6AB"/>
+      <stop offset="0.45" stop-color="#B55233"/>
+      <stop offset="1" stop-color="#803218"/>
+    </linearGradient>
+  </defs>
+</svg>
