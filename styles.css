@@ -205,11 +205,20 @@ h1 {
   border: 1px solid var(--line);
 }
 
+.inline-link {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .hero-card,
 .overview-panel,
 .profile-card,
 .highlight-card,
-.contact-panel {
+.contact-panel,
+.links-panel,
+.link-card {
   border: 1px solid var(--line);
   background: var(--surface-strong);
   box-shadow: var(--shadow);
@@ -277,6 +286,25 @@ h1 {
 .contact-panel {
   padding: 28px;
   border-radius: 26px;
+}
+
+.links-panel {
+  max-width: 760px;
+  padding: 28px;
+  border-radius: 26px;
+  background: rgba(255, 250, 242, 0.96);
+  border: 1px solid rgba(71, 53, 41, 0.1);
+  box-shadow: 0 18px 48px rgba(86, 52, 34, 0.14);
+}
+
+.links-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.links-panel p + p {
+  margin-top: 14px;
 }
 
 .overview-panel p,
