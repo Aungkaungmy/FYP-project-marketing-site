@@ -62,14 +62,15 @@
         </div>
         <div class="overview-panel">
           <p>
-            Secure File Sharing and Recovery System is proposed as a platform that helps
-            users upload, organize, share, restore, and monitor important files in a
-            protected environment. The project addresses two connected needs: secure
-            file access and dependable recovery after deletion, accidental loss, or
-            version conflicts.
+            Lazarus is a secure file-sharing and recovery platform that enables
+            users to upload, organise and share files through controlled access.
+            Files are encrypted and divided into fragments that are distributed
+            across separate storage locations. When retrieval is required, the
+            necessary fragments are collected, reconstructed and decrypted
+            automatically for the authorised user.
           </p>
           <p>
-          </p>
+            </p>
         </div>
       </section>
 
@@ -115,12 +116,12 @@
           <article class="profile-card">
             <p class="role-tag">General User</p>
             <h3>General User</h3>
-            <p>A general user can upload, share, receive, and restore files in a secure environment while collaborating with other authorized users.</p>
+            <p>A general user can upload, share, receive, and recover files in a secure environment while collaborating with other authorized users.</p>
           </article>
           <article class="profile-card">
             <p class="role-tag">Administrator</p>
             <h3>System Admin</h3>
-            <p>Oversees platform users, monitors logs, manages recovery cases, and enforces security settings.</p>
+            <p>Oversees platform security configurations, including password and username requirements, failed-login limits, and the maximum expiry duration for secure sharing links.</p>
           </article>
           <article class="profile-card">
             <p class="role-tag">Administrator</p>
@@ -145,16 +146,16 @@
             <p>Users can share files through permission-based access, limiting who can view, download, or manage documents.</p>
           </article>
           <article class="highlight-card">
-            <h3>Recovery and Version Restore</h3>
-            <p>Deleted or changed files can be recovered through recycle, backup, or historical version restoration workflows.</p>
+            <h3>Threshold-Based File Recovery</h3>
+            <p>Files are recovered by retrieving the required encrypted fragments from distributed storage, reconstructing the protected data, and decrypting it for the authorised user.</p>
           </article>
           <article class="highlight-card">
             <h3>Role-Based Access Control</h3>
             <p>Different roles operate with different privileges to reduce unauthorized exposure and improve governance.</p>
           </article>
           <article class="highlight-card">
-            <h3>Dashboard and Alerts</h3>
-            <p>Users and administrators receive visibility into file status, access events, and recovery notifications.</p>
+            <h3>Secure Fragment Distribution</h3>
+            <p>Encrypted file fragments are distributed across separate storage locations, reducing reliance on any single storage point and supporting resilient recovery.</p>
           </article>
         </div>
       </section>
@@ -166,16 +167,19 @@
         </div>
         <div class="overview-panel">
           <p>
-            Based on the sample Technical Design Manual and User Requirement
-            Specification, the system can be organized into a web interface, an
-            authentication and access-control layer, secure file storage, a recovery
-            module, and an administrative monitoring panel.
+            Lazarus is implemented as a Flask web application hosted on Oracle
+            Cloud Infrastructure and served through Gunicorn. The system
+            separates identity and access-control operations from cryptographic
+            file-processing workflows. MySQL stores application metadata, while
+            files are protected using AES-256-GCM encryption before
+            Reed-Solomon fragmentation and distribution across distinct OCI
+            Object Storage locations.
           </p>
           <p>
-            Non-functional requirements for this project should emphasize security,
-            reliability, maintainability, usability, and scalability. These areas were
-            consistently highlighted across the provided sample FYP documents and fit
-            this project especially well.
+            This architecture supports controlled file sharing, role-based
+            access, secure fragment distribution and threshold-based recovery.
+            When an authorised user retrieves a file, the required fragments
+            are collected, reconstructed and decrypted automatically.
           </p>
         </div>
       </section>
@@ -252,8 +256,8 @@
             <p>It supports safer handling of documents that should not be exposed to unintended users.</p>
           </article>
           <article class="highlight-card">
-            <h3>Fits Real Organizational Needs</h3>
-            <p>Secure exchange, access control, and auditability are valuable in education, business, and administration.</p>
+            <h3>Supports Real-World Collaboration</h3>
+            <p>Whether for individuals, businesses, or institutions, everyone needs a secure way to exchange important files while controlling who can access them and for how long.</p>
           </article>
         </div>
       </section>
