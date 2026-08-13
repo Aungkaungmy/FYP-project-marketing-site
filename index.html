@@ -83,24 +83,26 @@
           <article class="highlight-card">
             <h3>Problem Statement</h3>
             <p>
-              Existing file sharing tools often prioritize convenience, but users still
-              face risks such as unauthorized access, accidental deletion, weak recovery
-              flows, and limited visibility into who accessed or changed a file.
+              Existing file-sharing tools often prioritise convenience, but users still
+              face risks such as unauthorised access, centralised storage dependency,
+              limited control over shared-file access, and difficulty recovering files
+              when stored data becomes unavailable.
             </p>
           </article>
           <article class="highlight-card">
             <h3>Project Objective</h3>
             <p>
-              Build a secure platform that supports protected upload and sharing,
-              recovery options for lost files, and clear access control for different
-              types of users.
+              Build a secure platform that supports protected file upload and
+              sharing, distributed fragment storage, threshold-based file
+              recovery, and clear access control for different types of users.
             </p>
           </article>
           <article class="highlight-card">
             <h3>Expected Outcome</h3>
             <p>
-              Deliver a usable web-based system that combines encryption-minded design,
-              recovery workflows, activity tracking, and role-based management in one
+              Deliver a usable web-based system that combines authenticated
+              encryption, controlled sharing, distributed fragment storage,
+              threshold-based recovery, and role-based management in one
               coherent solution.
             </p>
           </article>
@@ -126,7 +128,7 @@
           <article class="profile-card">
             <p class="role-tag">Administrator</p>
             <h3>User Admin</h3>
-            <p>Manages user accounts, monitors access permissions, and supports account-related administration tasks.</p>
+            <p>Maintains a secure and well-managed user environment by overseeing accounts, access status, and user administration.</p>
           </article>
         </div>
       </section>
@@ -143,7 +145,7 @@
           </article>
           <article class="highlight-card">
             <h3>Controlled File Sharing</h3>
-            <p>Users can share files through permission-based access, limiting who can view, download, or manage documents.</p>
+            <p>Users can share files through controlled links that restrict access to authorised recipients and remain valid only for the configured duration.</p>
           </article>
           <article class="highlight-card">
             <h3>Threshold-Based File Recovery</h3>
@@ -167,19 +169,19 @@
         </div>
         <div class="overview-panel">
           <p>
-            Lazarus is implemented as a Flask web application hosted on Oracle
-            Cloud Infrastructure and served through Gunicorn. The system
-            separates identity and access-control operations from cryptographic
-            file-processing workflows. MySQL stores application metadata, while
-            files are protected using AES-256-GCM encryption before
-            Reed-Solomon fragmentation and distribution across distinct OCI
-            Object Storage locations.
+            Lazarus is designed to protect files throughout their journey, from
+            upload and controlled sharing to distributed storage and recovery.
+            Files are secured using AES-256-GCM authenticated encryption,
+            divided into Reed-Solomon fragments, and distributed across
+            separate OCI Object Storage locations to reduce reliance on any
+            single storage point.
           </p>
           <p>
-            This architecture supports controlled file sharing, role-based
-            access, secure fragment distribution and threshold-based recovery.
-            When an authorised user retrieves a file, the required fragments
-            are collected, reconstructed and decrypted automatically.
+            Built on Flask and hosted on Oracle Cloud Infrastructure, Lazarus
+            combines role-based access control, secure fragment distribution,
+            and threshold-based recovery in one cohesive platform. When an
+            authorised user retrieves a file, the required fragments are
+            collected, reconstructed, and decrypted automatically.
           </p>
         </div>
       </section>
